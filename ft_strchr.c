@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: grmullin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: grmullin <grmullin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 15:56:54 by grmullin          #+#    #+#             */
-/*   Updated: 2023/06/28 15:50:38 by grmullin         ###   ########.fr       */
+/*   Updated: 2025/04/29 16:46:01 by grmullin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strchr(const char *str, int c)
 	size_t	d;
 
 	d = 0;
+	if (!str)
+		return (0);
 	while (d <= ft_strlen(str))
 	{
 		if (str[d] == (char)c)
